@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShammFood — Autentisk Syrisk Catering | Danmark</title>
+<meta name="description" content="ShammFood tilbyder autentisk syrisk catering til bryllupper, fester og virksomheder i Danmark. Book via WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Scheherazade+New:wght@400;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0C0500;--card:#160A02;--muted:#1B0D05;--gold:#F5A623;--gold2:#F7C05A;--cream:#EDE0C4;--cmuted:#A8957A;--red:#8B2E1C;--tmuted:#947D60;--fd:'Cormorant Garamond',serif;--far:'Scheherazade New',serif;--fu:'Jost',sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--cream);font-family:var(--fu);font-weight:400;line-height:1.6;overflow-x:hidden}
+body.ar{direction:rtl}
+[data-ar]{display:none}
+body.ar [data-da]{display:none}
+body.ar [data-ar]{display:inline}
+.bl[data-ar]{display:none}
+body.ar .bl[data-da]{display:none}
+body.ar .bl[data-ar]{display:block}
+.c{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+
+/* HEADER */
+header{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.2rem 2rem;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to bottom,rgba(12,5,0,.97) 0%,rgba(12,5,0,0) 100%);transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+header.sc{background:rgba(12,5,0,.97);border-color:rgba(245,166,35,.14)}
+.logo{font-family:var(--fd);font-size:1.7rem;font-weight:700;color:var(--gold);text-decoration:none;letter-spacing:.04em}
+.logo span{color:var(--cream);font-style:italic}
+body.ar .logo{font-family:var(--far);font-size:1.5rem}
+.hr{display:flex;align-items:center;gap:1.2rem}
+.lw{display:flex;gap:.3rem}
+.lb{background:none;border:1px solid rgba(245,166,35,.3);border-radius:2rem;padding:.3rem .85rem;color:var(--cmuted);font-family:var(--fu);font-size:.78rem;font-weight:500;letter-spacing:.08em;cursor:pointer;transition:all .2s}
+.lb:hover,.lb.on{border-color:var(--gold);color:var(--gold)}
+.hcta{background:var(--gold);color:#0C0500;border:none;border-radius:2rem;padding:.5rem 1.4rem;font-family:var(--fu);font-size:.85rem;font-weight:600;cursor:pointer;text-decoration:none;transition:all .2s}
+.hcta:hover{background:var(--gold2);transform:translateY(-1px)}
+#prog{position:fixed;top:0;left:0;height:2px;background:var(--gold);z-index:200;width:0;transition:width .08s}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:9rem 0 6rem}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=1600&q=80') center/cover no-repeat;filter:brightness(.35) saturate(1.2)}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(120deg,rgba(12,5,0,.88) 0%,rgba(12,5,0,.55) 60%,rgba(12,5,0,.3) 100%)}
+.hero-pat{position:absolute;inset:0;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23F5A623' stroke-width='.7'%3E%3Cpolygon points='30,2 58,16 58,44 30,58 2,44 2,16'/%3E%3Cpolygon points='30,10 50,20 50,40 30,50 10,40 10,20'/%3E%3Cline x1='30' y1='2' x2='30' y2='58'/%3E%3Cline x1='2' y1='16' x2='58' y2='44'/%3E%3Cline x1='58' y1='16' x2='2' y2='44'/%3E%3C/g%3E%3C/svg%3E");background-size:60px}
+.hc{position:relative;z-index:2;max-width:720px}
+.ey{display:inline-flex;align-items:center;gap:.7rem;color:var(--gold);font-size:.8rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;margin-bottom:1.6rem}
+.ey::before{content:'';display:block;width:28px;height:1px;background:var(--gold)}
+h1{font-family:var(--fd);font-size:clamp(3rem,8.5vw,6.2rem);font-weight:700;line-height:1.04;margin-bottom:1.5rem;color:var(--cream)}
+h1 em{font-style:italic;color:var(--gold)}
+body.ar h1{font-family:var(--far);font-size:clamp(2.5rem,7vw,5.2rem)}
+.hs{font-size:1.1rem;color:var(--cmuted);max-width:460px;line-height:1.75;margin-bottom:2.5rem}
+.cr{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+.bp{display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:#0C0500;border:none;border-radius:3rem;padding:.95rem 2.4rem;font-family:var(--fu);font-size:.95rem;font-weight:600;text-decoration:none;cursor:pointer;transition:all .22s}
+.bp:hover{background:var(--gold2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(245,166,35,.28)}
+.bs{display:inline-flex;align-items:center;gap:.5rem;background:transparent;color:var(--cream);border:1px solid rgba(237,224,196,.28);border-radius:3rem;padding:.95rem 2.4rem;font-family:var(--fu);font-size:.95rem;font-weight:400;text-decoration:none;cursor:pointer;transition:all .22s}
+.bs:hover{border-color:rgba(237,224,196,.6)}
+
+/* STRIP */
+.strip{background:var(--muted);padding:3.5rem 0;border-top:1px solid rgba(245,166,35,.08);border-bottom:1px solid rgba(245,166,35,.08)}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;text-align:center}
+.si{padding:0 .8rem}
+.si-ico{font-size:2.2rem;margin-bottom:.9rem;display:block}
+.si-t{font-family:var(--fd);font-size:1.1rem;font-weight:600;color:var(--cream);margin-bottom:.4rem}
+body.ar .si-t{font-family:var(--far)}
+.si-d{font-size:.85rem;color:var(--tmuted);line-height:1.6}
+.dl{height:1px;background:linear-gradient(90deg,transparent,rgba(245,166,35,.38),transparent)}
+
+/* SECTIONS */
+section{padding:6rem 0}
+.sye{color:var(--gold);font-size:.78rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;margin-bottom:.7rem}
+h2{font-family:var(--fd);font-size:clamp(2rem,5vw,3.2rem);font-weight:700;line-height:1.12;color:var(--cream);margin-bottom:1rem}
+body.ar h2{font-family:var(--far)}
+.ss{color:var(--tmuted);max-width:540px;line-height:1.75}
+
+/* MENU */
+.mh{margin-bottom:3.5rem}
+.mg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.mc{background:var(--card);border:1px solid rgba(245,166,35,.1);border-radius:14px;overflow:hidden;transition:border-color .3s,transform .22s}
+.mc:hover{border-color:rgba(245,166,35,.35);transform:translateY(-5px)}
+.mc-img{width:100%;height:200px;object-fit:cover;display:block}
+.mc-body{padding:1.8rem}
+.mc-ar{font-family:var(--far);font-size:1.05rem;color:var(--gold);margin-bottom:.8rem;direction:rtl}
+.mc-da{font-family:var(--fd);font-size:1.45rem;font-weight:700;color:var(--cream);margin-bottom:.8rem}
+body.ar .mc-da{font-family:var(--far)}
+.mc-desc{font-size:.88rem;color:var(--tmuted);line-height:1.65}
+.mbadge{display:inline-block;margin-top:1.1rem;padding:.28rem .85rem;background:rgba(245,166,35,.09);border:1px solid rgba(245,166,35,.22);border-radius:2rem;font-size:.73rem;font-weight:500;color:var(--gold);letter-spacing:.06em}
+
+/* ABOUT */
+.about{background:var(--muted)}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.at p{color:var(--tmuted);line-height:1.82;margin-bottom:1.1rem}
+.at p:last-child{margin-bottom:0}
+.aimg{width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;display:block;border:1px solid rgba(245,166,35,.15)}
+.abox{position:relative}
+.astats{position:absolute;bottom:1.2rem;left:1.2rem;right:1.2rem;display:flex;gap:.8rem;justify-content:center}
+.ast{background:rgba(12,5,0,.85);border:1px solid rgba(245,166,35,.2);border-radius:10px;padding:.9rem 1.2rem;text-align:center;backdrop-filter:blur(8px)}
+.asn{font-family:var(--fd);font-size:1.8rem;font-weight:700;color:var(--gold);display:block;line-height:1}
+.asl{font-size:.7rem;color:var(--tmuted);margin-top:.3rem;text-transform:uppercase;letter-spacing:.08em}
+
+/* BOOKING */
+.book{background:var(--bg);text-align:center}
+.bi{background:var(--card);border:1px solid rgba(245,166,35,.18);border-radius:18px;padding:4.5rem 3rem;position:relative;overflow:hidden}
+.bglow{position:absolute;top:0;left:50%;transform:translateX(-50%);width:450px;height:220px;background:radial-gradient(ellipse,rgba(245,166,35,.13) 0%,transparent 70%);pointer-events:none}
+.bt{font-family:var(--fd);font-size:clamp(1.9rem,4vw,3rem);font-weight:700;color:var(--cream);margin-bottom:1rem;position:relative}
+body.ar .bt{font-family:var(--far)}
+.bsub{color:var(--tmuted);margin-bottom:2.5rem;font-size:1rem;line-height:1.75;position:relative;max-width:500px;margin-left:auto;margin-right:auto}
+.wa{display:inline-flex;align-items:center;gap:.6rem;background:#25D366;color:#fff;border:none;border-radius:3rem;padding:1.05rem 2.8rem;font-family:var(--fu);font-size:1rem;font-weight:600;text-decoration:none;cursor:pointer;transition:all .22s;position:relative}
+.wa:hover{background:#1fbe5a;transform:translateY(-2px);box-shadow:0 10px 32px rgba(37,211,102,.27)}
+.wai{width:22px;height:22px}
+
+/* FOOTER */
+footer{background:var(--card);border-top:1px solid rgba(245,166,35,.08);padding:3.5rem 0 2rem}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+.flo{font-family:var(--fd);font-size:1.5rem;font-weight:700;color:var(--gold);margin-bottom:.55rem}
+body.ar .flo{font-family:var(--far)}
+.ftag{font-size:.85rem;color:var(--tmuted);line-height:1.6}
+.fh{font-size:.76rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--cream);margin-bottom:1rem}
+.fl{display:block;color:var(--tmuted);font-size:.9rem;text-decoration:none;margin-bottom:.5rem;transition:color .2s}
+.fl:hover{color:var(--gold)}
+.fb{border-top:1px solid rgba(245,166,35,.07);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.fbt{font-size:.78rem;color:var(--tmuted)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+.mg{grid-template-columns:1fr;max-width:460px;margin:0 auto}
+.ag{grid-template-columns:1fr;gap:2.5rem}
+.abox{order:-1}
+.sg{grid-template-columns:1fr;gap:1.5rem}
+.fg{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+header{padding:1rem 1.2rem}
+.hcta{display:none}
+.bi{padding:2.8rem 1.5rem}
+.fg{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div id="prog"></div>
+
+<header id="hdr">
+  <a href="#top" class="logo">Shamm<span>Food</span></a>
+  <div class="hr">
+    <div class="lw">
+      <button class="lb on" id="bDA" onclick="setLang('da')">DA</button>
+      <button class="lb" id="bAR" onclick="setLang('ar')">ع</button>
+    </div>
+    <a href="#booking" class="hcta">
+      <span data-da>Book nu</span><span data-ar>احجز الآن</span>
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-ov"></div>
+  <div class="hero-pat"></div>
+  <div class="c">
+    <div class="hc">
+      <div class="ey">
+        <span data-da>Autentisk syrisk catering · Danmark</span>
+        <span data-ar>كيترينج سوري أصيل · الدنمارك</span>
+      </div>
+      <h1>
+        <span class="bl" data-da>Mad der<br><em>samler</em><br>mennesker</span>
+        <span class="bl" data-ar>طعام يجمع<br><em>الناس</em><br>معاً</span>
+      </h1>
+      <p class="hs">
+        <span data-da>Lad os bringe smagen fra Damaskus til din fest. Hjemmelavet, autentisk og tilberedt med kærlighed — til alle anledninger i Danmark og Sverige.</span>
+        <span data-ar>دعنا نحضر نكهة دمشق إلى حفلتك. طعام منزلي أصيل، مُعد بكل حب — لكل مناسبة في الدنمارك والسويد.</span>
+      </p>
+      <div class="cr">
+        <a href="#booking" class="bp">💬&nbsp;<span data-da>Book via WhatsApp</span><span data-ar>احجز عبر واتساب</span></a>
+        <a href="#menu" class="bs"><span data-da>Se vores menu ↓</span><span data-ar>شاهد ق��ئمتنا ↓</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="c">
+    <div class="sg">
+      <div class="si"><span class="si-ico">🥂</span><div class="si-t"><span data-da>Bryllupper & Fester</span><span data-ar>الأعراس والحفلات</span></div><p class="si-d"><span data-da>Catering til alle typer fejringer.</span><span data-ar>كيترينج لجميع أنواع المناسبات.</span></p></div>
+      <div class="si"><span class="si-ico">🏢</span><div class="si-t"><span data-da>Virksomheder</span><span data-ar>الشركات</span></div><p class="si-d"><span data-da>Professionelt frokostkatering.</span><span data-ar>غداء احترافي للشركات.</span></p></div>
+      <div class="si"><span class="si-ico">🕌</span><div class="si-t"><span data-da>Mærkedage</span><span data-ar>المناسبات الدينية</span></div><p class="si-d"><span data-da>Ramadan, Eid og særlige anledninger.</span><span data-ar>رمضان وعيد ومناسبات خاصة.</span></p></div>
+    </div>
+  </div>
+</div>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="c">
+    <div class="mh">
+      <div class="sye"><span data-da>Vores specialiteter</span><span data-ar>تخصصاتنا</span></div>
+      <h2><span class="bl" data-da>Smagsoplevelser fra Sham</span><span class="bl" data-ar>نكهات من الشام</span></h2>
+      <p class="ss"><span data-da>Opskrifter nedarvet gennem generationer — nu til dit bord.</span><span data-ar>وصفات متوارثة عبر الأجيال — الآن على مائدتك.</span></p>
+    </div>
+    <div class="mg">
+      <div class="mc">
+        <img class="mc-img" src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=80" alt="Ouzi - Lamb dish" loading="lazy">
+        <div class="mc-body">
+          <div class="mc-ar">خروف محشي قوزي دمشقي</div>
+          <div class="mc-da"><span data-da>Ouzi — Damaskuslammet</span><span data-ar>أوزي دمشقي</span></div>
+          <p class="mc-desc"><span data-da>Langtidskogt lammelår med krydret ris, nødder og rosiner. Den klassiske damascenske festret til store begivenheder.</span><span data-ar>خروف مطبوخ ببطء مع أرز متبل بالمكسرات والزبيب. الوجبة الدمشقية الكلاسيكية للمناسبات الكبيرة.</span></p>
+          <span class="mbadge"><span data-da>Festmad</span><span data-ar>طعام الأفراح</span></span>
+        </div>
+      </div>
+      <div class="mc">
+        <img class="mc-img" src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&q=80" alt="Chicken with chickpeas" loading="lazy">
+        <div class="mc-body">
+          <div class="mc-ar">دجاج مع حمص وبطاطا</div>
+          <div class="mc-da"><span data-da>Kylling med Kikærter</span><span data-ar>دجاج مع حمص</span></div>
+          <p class="mc-desc"><span data-da>Saftig kylling med kikærter, kartofler og aromatiske syriske krydderier. Perfekt til catering og daglige arrangementer.</span><span data-ar>دجاج طري مع الحمص والبطاطا والبهارات السورية العطرية. مثالي للكيترينج والفعاليات.</span></p>
+          <span class="mbadge"><span data-da>Mest populær</span><span data-ar>الأكثر طلباً</span></span>
+        </div>
+      </div>
+      <div class="mc">
+        <img class="mc-img" src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80" alt="Syrian broth soup" loading="lazy">
+        <div class="mc-body">
+          <div class="mc-ar">مرق دجاج شامي بالثوم</div>
+          <div class="mc-da"><span data-da>Syrisk Bouillon</span><span data-ar>مرق شامي</span></div>
+          <p class="mc-desc"><span data-da>Hjemmelavet syrisk kyllingebouillon med friske krydderier og hvidløg — varm, nærende og fuld af ægte smag.</span><span data-ar>مرق دجاج سوري منزلي بالتوابل الطازجة والثوم — دافئ ومغذٍّ ومليء بالنكهة الحقيقية.</span></p>
+          <span class="mbadge"><span data-da>Hjemmelavet</span><span data-ar>منزلي الصنع</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dl"></div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="c">
+    <div class="ag">
+      <div class="at">
+        <div class="sye"><span data-da>Vores historie</span><span data-ar>قصتنا</span></div>
+        <h2><span class="bl" data-da>Smagen fra Damaskus</span><span class="bl" data-ar>نكهة دمشق</span></h2>
+        <p><span data-da>ShammFood blev grundlagt med én drøm: at dele den autentiske syriske madkultur med danskerne. Vores opskrifter er hjemmelavet og nedarvet gennem generationer.</span><span data-ar>تأسست ShammFood بحلم واحد: مشاركة ثقافة الطعام السوري الأصيل مع الدنماركيين. وصفاتنا منزلية ومتوارثة عبر الأجيال.</span></p>
+        <p><span data-da>Vi bruger kun friske råvarer og traditionelle krydderier fra Mellemøsten for at sikre den ægte oplevelse — hver gang.</span><span data-ar>نستخدم فقط المواد الطازجة والتوابل التقليدية من الشرق الأوسط لضمان التجربة الحقيقية — في كل مرة.</span></p>
+        <p><span data-da>Fra intime familiemiddage til store bryllupper med hundredvis af gæster — vi leverer mad med kærlighed og stolthed.</span><span data-ar>من العشاء العائلي الصغير إلى حفلات الأعراس الكبيرة — نقدم الطعام بحب وفخر.</span></p>
+      </div>
+      <div class="abox">
+        <img class="aimg" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80" alt="ShammFood catering" loading="lazy">
+        <div class="astats">
+          <div class="ast"><span class="asn">100+</span><div class="asl"><span data-da>Begivenheder</span><span data-ar>مناسبة</span></div></div>
+          <div class="ast"><span class="asn">5★</span><div class="asl"><span data-da>Bedømmelse</span><span data-ar>تقييم</span></div></div>
+          <div class="ast"><span class="asn">DK🇩🇰</span><div class="asl"><span data-da>Hele landet</span><span data-ar>كل الدنمارك</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="book" id="booking">
+  <div class="c">
+    <div class="bi">
+      <div class="bglow"></div>
+      <h2 class="bt"><span data-da>Klar til at booke?</span><span data-ar>مستعد للحجز؟</span></h2>
+      <p class="bsub"><span data-da>Send os en besked på WhatsApp — vi svarer hurtigt og hjælper dig med at planlægge dit arrangement, uanset størrelse.</span><span data-ar>أرسل لنا رسالة على واتساب — نرد بسرعة ونساعدك في تخطيط مناسبتك، بغض النظر عن حجمها.</span></p>
+      <a href="https://wa.me/4500000000?text=Hej%20ShammFood!%20Jeg%20vil%20gerne%20h%C3%B8re%20mere%20om%20jeres%20catering." class="wa" target="_blank" rel="noopener">
+        <svg class="wai" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+        <span data-da>Skriv på WhatsApp</span><span data-ar>راسلنا على واتساب</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="c">
+    <div class="fg">
+      <div>
+        <div class="flo">ShammFood</div>
+        <p class="ftag"><span data-da>Autentisk syrisk catering<br>til hele Danmark 🇩🇰</span><span data-ar>كيترينج سوري أصيل<br>لكل الدنمارك 🇩🇰</span></p>
+      </div>
+      <div>
+        <div class="fh"><span data-da>Navigation</span><span data-ar>التنقل</span></div>
+        <a href="#menu" class="fl"><span data-da>Vores menu</span><span data-ar>قائمتنا</span></a>
+        <a href="#about" class="fl"><span data-da>Om os</span><span data-ar>عن الشركة</span></a>
+        <a href="#booking" class="fl"><span data-da>Book nu</span><span data-ar>احجز الآن</span></a>
+      </div>
+      <div>
+        <div class="fh"><span data-da>Kontakt</span><span data-ar>التواصل</span></div>
+        <a href="https://wa.me/4500000000" class="fl" target="_blank">WhatsApp</a>
+        <a href="mailto:info@shammfood.dk" class="fl">info@shammfood.dk</a>
+        <span class="fl" style="cursor:default">shammfood.dk</span>
+      </div>
+    </div>
+    <div class="fb">
+      <span class="fbt">© 2025 ShammFood · <span data-da>Alle rettigheder forbeholdt</span><span data-ar>جميع الحقوق محفوظة</span></span>
+      <span class="fbt"><span data-da>Lavet med ❤️ og smag</span><span data-ar>صُنع بـ ❤️ وبنكهة</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function setLang(l){
+  document.body.className=l==='ar'?'ar':'';
+  document.documentElement.lang=l;
+  document.documentElement.dir=l==='ar'?'rtl':'ltr';
+  document.getElementById('bDA').classList.toggle('on',l==='da');
+  document.getElementById('bAR').classList.toggle('on',l==='ar');
+  localStorage.setItem('sf_lang',l);
+}
+const sl=localStorage.getItem('sf_lang');
+if(sl)setLang(sl);
+const hdr=document.getElementById('hdr');
+window.addEventListener('scroll',()=>{
+  hdr.classList.toggle('sc',window.scrollY>50);
+  const p=window.scrollY/(document.body.scrollHeight-window.innerHeight)*100;
+  document.getElementById('prog').style.width=p+'%';
+},{passive:true});
+</script>
+</body>
+</html>
